@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Praxis für Psychotherapie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #f8f9fa;
+      --accent: #007aff;
+      --dark: #1a1a1a;
+      --soft-dark: #333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--primary);
+      color: var(--dark);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(120deg, #007aff, #00c6ff);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      transition: background 0.5s ease;
+    }
+
+    header.scrolled {
+      background: #1a1a1a;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      max-width: 600px;
+    }
+
+    .divider {
+      height: 150px;
+      background: url('https://www.svgbackgrounds.com/wp-content/uploads/2021/05/wave-haikei.svg') no-repeat center;
+      background-size: cover;
+    }
+
+    .section {
+      padding: 6rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 1s forwards;
+    }
+
+    .section-dark {
+      background: #f0f0f0;
+    }
+
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--soft-dark);
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      margin-bottom: 1.2rem;
+      color: var(--dark);
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      background: white;
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+
+    .stat {
+      margin: 2rem 1rem;
+    }
+
+    .stat h2 {
+      font-size: 3rem;
+      color: var(--accent);
+    }
+
+    .stat p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header id="main-header">
+    <h1>Praxis für Psychotherapie</h1>
+    <p>Ein Raum für Entwicklung, Selbstfindung und nachhaltige Veränderung – mit Herz, Verstand und Erfahrung.</p>
+  </header>
+
+  <div class="divider"></div>
+
+  <section class="stats">
+    <div class="stat"><h2 id="patients">0</h2><p>Behandelte Patienten</p></div>
+    <div class="stat"><h2 id="hours">0</h2><p>Therapiestunden</p></div>
+    <div class="stat"><h2 id="years">0</h2><p>Jahre Erfahrung</p></div>
+    <div class="stat"><h2 id="success">0%</h2><p>Patientenzufriedenheit</p></div>
+  </section>
+
+  <section class="section">
+    <h2>Der erste Schritt zur Veränderung</h2>
+    <p>Die Entscheidung, eine Psychotherapie zu beginnen, ist mutig und kraftvoll. In meiner Praxis biete ich Ihnen einen geschützten Raum, in dem Sie verstanden werden und sich entwickeln können. Gemeinsam analysieren wir, wo Sie stehen, welche Muster Sie begleiten und wie Sie neue Wege einschlagen können.</p>
+    <p>Ob Sie an Ängsten leiden, depressive Phasen durchleben oder sich in einer persönlichen Krise befinden – wir arbeiten individuell und zielgerichtet an Ihrer Stabilität und Lebensqualität.</p>
+  </section>
+
+  <section class="section section-dark">
+    <h2>Moderne, wirksame Methoden</h2>
+    <p>Ich arbeite mit wissenschaftlich fundierten Methoden wie kognitiver Verhaltenstherapie, achtsamkeitsbasierten Techniken und tiefenpsychologischen Ansätzen. Der Behandlungsplan wird individuell auf Ihre Bedürfnisse abgestimmt, damit Sie nachhaltig profitieren.</p>
+    <p>Therapie bedeutet nicht nur das Lösen von Problemen, sondern auch das Entfalten Ihrer Stärken. Gemeinsam entwickeln wir Strategien für emotionale Resilienz, innere Ruhe und ein selbstbestimmtes Leben.</p>
+  </section>
+
+  <section class="section">
+    <h2>Über mich</h2>
+    <p>Mein Name ist Dr. Johanna Richter, approbierte Psychotherapeutin mit über einem Jahrzehnt Berufserfahrung. In meiner Arbeit lege ich großen Wert auf Empathie, Authentizität und Transparenz. Ich begleite Menschen durch Lebenskrisen, Veränderungsprozesse und emotionale Herausforderungen – mit Herz und wissenschaftlicher Präzision.</p>
+    <p>Nach meinem Studium der Psychologie promovierte ich zum Thema "Bindungsverhalten und emotionale Stabilität" und bilde mich kontinuierlich fort. Ich bin überzeugt: Jeder Mensch trägt die Lösung bereits in sich – manchmal braucht es nur den richtigen Impuls.</p>
+  </section>
+
+  <section class="section section-dark">
+    <h2>Wertschätzende Begleitung</h2>
+    <p>Therapie ist mehr als ein Gespräch – sie ist ein Prozess des Verstehens, des Loslassens und des Neuausrichtens. In meiner Praxis geht es nicht nur um das „Wegmachen“ von Symptomen, sondern um nachhaltige Veränderung, die aus Ihrem Inneren heraus entsteht.</p>
+    <p>Wir arbeiten auf Augenhöhe. Ich sehe Sie nicht als Patient*in mit einem „Defizit“, sondern als Mensch mit Ressourcen, Geschichte und Entwicklungspotenzial.</p>
+  </section>
+
+  <section class="section">
+    <h2>Kontakt und Terminvereinbarung</h2>
+    <p>Sie möchten mehr erfahren oder einen Termin für ein Erstgespräch vereinbaren? Ich freue mich auf Ihre Nachricht. Bitte kontaktieren Sie mich telefonisch oder per E-Mail – auch Abendtermine sind möglich.</p>
+    <p><strong>Email:</strong> kontakt@praxis-richter.de<br><strong>Telefon:</strong> 0123-4567890<br><strong>Adresse:</strong> Lindenstraße 7, 10115 Berlin</p>
+  </section>
+
+  <script>
+    // Scroll-Effekt für Header
+    window.addEventListener("scroll", () => {
+      const header = document.getElementById("main-header");
+      header.classList.toggle("scrolled", window.scrollY > 50);
+    });
+
+    // Zahlen animieren
+    function animateValue(id, start, end, duration, suffix = "") {
+      const obj = document.getElementById(id);
+      let startTime = null;
+
+      const step = timestamp => {
+        if (!startTime) startTime = timestamp;
+        const progress = Math.min((timestamp - startTime) / duration, 1);
+        obj.textContent = Math.floor(progress * (end - start) + start) + suffix;
+        if (progress < 1) requestAnimationFrame(step);
+      };
+
+      requestAnimationFrame(step);
+    }
+
+    window.addEventListener("load", () => {
+      animateValue("patients", 0, 860, 1000);
+      animateValue("hours", 0, 15340, 1500);
+      animateValue("years", 0, 12, 1200);
+      animateValue("success", 0, 98, 1500, "%");
+    });
+  </script>
+</body>
+</html>
